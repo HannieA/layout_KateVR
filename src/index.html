@@ -3,11 +3,126 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <title>KatVR</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page">
+    <header class="header">
+      <div class="page__container header__container">
+        <nav class="nav">
+          <div class="nav__container">
+            <ul class="nav__list">
+              <li class="nav__logo">
+                <a href="#" class="page__link nav__link nav__link--logo">
+                  <img
+                    src="./images/Logo.svg"
+                    alt="Logo"
+                    class="nav__logo"
+                  >
+                </a>
+              </li>
+              <li class="nav__language">
+                <a href="#" class=" page__link nav__link nav__link--lang">En</a>
+              </li>
+            </ul>
+
+            <ul class="nav__list nav__list--onTablet">
+              <li class="nav__item">
+                <a href="#about" class="page__link nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#tech" class="page__link nav__link">Tech</a>
+              </li>
+              <li class="nav__item">
+                <a href="#benefits" class="page__link nav__link">Benefits</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="page__link nav__link">Contact</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="button nav__link page__link">Buy Now</a>
+              </li>
+            </ul>
+            <a href="#menu" class="nav__menu-burger"></a>
+          </div>
+        </nav>
+
+        <div class="menu" id="menu">
+          <div class="page__container">
+            <div class="nav__container nav__container--mobile">
+              <a href="#" class="menu__cross"></a>
+            </div>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#about" class="page__link menu__link">About</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#tech" class="page__link menu__link">Tech</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#benefits" class="page__link menu__link">Benefits</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#contacts" class="page__link menu__link">Contacts</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#language" class="page__link menu__link">Language</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#faq" class="page__link menu__link">FAQ</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#help" class="page__link menu__link">Help</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__content">
+          <div class="header__img"></div>
+          <h1 class="header__title">THE NEW START OF
+            <br>
+            <span class="header__title--blue">VR LOCOMOTION</span>
+          </h1>
+          <div class="header__description">Discover the most comprehensive VR
+            <br>
+            Locomotion system, and unlock
+            <br>
+            infinite motion in any games on any platforms!
+          </div>
+          <div class="header__price">1200$</div>
+          <a href="#" class="button__play header__btn--play">
+            <div class="button__container"></div>
+          </a>
+        </div>
+        <div class="header__footer">
+          <div class="header__info">
+            <a href="#faq" class="page__link">FAQ</a>
+            <a href="#help" class="page__link">Help</a>
+          </div>
+          <div class="header__menu">
+            <a href="#" class="page__link header__menu--link">Menu</a>
+            <a href="#" class="header__menu--arrow"></a>
+          </div>
+          <div class="header__toggle">
+            <a href="#" class="page__link header__toggle--select">Previous</a>
+            <a href="#" class="page__link header__toggle--select">Next</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

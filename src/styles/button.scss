@@ -1,0 +1,25 @@
+.button {
+  background-color: $c-blue;
+  padding: 12px 56px;
+  border-radius: 4px;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    background-color: $c-white;
+  }
+
+  &__container {
+    margin-top: 20px;
+    background-image: url(../images/icons/play-btn.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 70px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      background-image: url(../images/icons/selected-play.svg);
+    }
+  }
+}

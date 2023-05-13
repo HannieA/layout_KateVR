@@ -1,0 +1,29 @@
+@mixin onLarge {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin gridDesktop {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+@mixin gridTablet {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}

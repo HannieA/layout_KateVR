@@ -1,0 +1,48 @@
+.menu {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $bcg-full;
+  z-index: 1;
+
+  transform: translate(-100%);
+  transition: ease-in-out 300ms;
+
+  overflow: auto;
+
+  &:target {
+    transform: translate(0);
+  }
+
+  &__cross {
+    background-image: url(../images/icons/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 17px;
+    height: 17px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 11px 156px;
+
+    &:hover {
+      background-color: #110E25;
+      ;
+    }
+  }
+}

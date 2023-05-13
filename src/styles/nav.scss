@@ -1,0 +1,59 @@
+.nav {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 0;
+
+    &--mobile {
+      justify-content: right;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 36px;
+    margin: 0;
+    padding: 0;
+
+    &--onTablet {
+      @include onTablet {
+        display: none;
+      }
+    }
+  }
+
+    &__link--lang {
+      color: $c-blue;
+      font-size: 16px;
+
+      &::after {
+        content: url(../images/icons/Polygon.svg);
+        margin-left: 4px;
+      }
+
+      @include onTablet {
+        display: none;
+      }
+    }
+
+  &__logo {
+    align-self: center;
+  }
+
+  &__menu-burger {
+    display: none;
+
+    @include onTablet {
+      background-image: url(../images/icons/burger-menu.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: block;
+      width: 30px;
+      height: 14px;
+    }
+  }
+}

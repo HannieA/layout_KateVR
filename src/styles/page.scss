@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 
-
   &__container {
     padding: 0 110px;
 
@@ -30,5 +29,47 @@
     &:hover {
       color: $c-blue;
     }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: $fw-900;
+    color: $c-white;
+    margin: 0;
+    padding: 0;
+
+    &--blue {
+      font-weight: $fw-400;
+      color: $c-blue;
+    }
+
+    @include onTablet {
+      font-size: 21px;
+    }
+
+    &-adds {
+      font-size: 14px;
+      font-weight: $fw-400;
+      color: $c-blue;
+      line-height: 17px;
+
+      @include onTablet {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__article-title {
+    font-size: 16px;
+    font-weight: $fw-900;
+    line-height: 19px;
+    color: $c-white;
+  }
+
+  &__article-description {
+    font-size: 16px;
+    font-weight: $fw-400;
+    color: $c-gray;
+    line-height: 150%;
   }
 }

@@ -25,19 +25,19 @@
     }
   }
 
-    &__link--lang {
-      color: $c-blue;
-      font-size: 16px;
+  &__link--lang {
+    color: $c-blue;
+    font-size: 16px;
 
-      &::after {
-        content: url(../images/icons/Polygon.svg);
-        margin-left: 4px;
-      }
-
-      @include onTablet {
-        display: none;
-      }
+    &::after {
+      content: url(../images/icons/Polygon.svg);
+      margin-left: 4px;
     }
+
+    @include onTablet {
+      display: none;
+    }
+  }
 
   &__logo {
     align-self: center;
